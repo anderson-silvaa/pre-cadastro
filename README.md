@@ -6,7 +6,7 @@ Criar uma aplicação que solicite os dados do usuário para realizar um pré-ca
 
 - [X] Criar estrutura inicial do projeto
 - [X] Criar estrutura incial do html: index.html
-- [] Realizar os imports dos arquivos css e javascript
+- [X] Realizar os imports dos arquivos css e javascript
 - [] Adicionar os Assets necessários
 
 ## Autor
