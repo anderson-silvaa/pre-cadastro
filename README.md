@@ -13,7 +13,7 @@ Criar uma aplicação que solicite os dados do usuário para realizar um pré-ca
 - [] Criar root com as cores
 - [X] Adicionar background gradiente ao body
 - [X] Estilizar o container geral
-- [] Estilizar o header
+- [X] Estilizar o header
 - [] Estilizar o formulário
 - [] Estilizar os botões
 - [] Criar função para consumir cep através da api viacep

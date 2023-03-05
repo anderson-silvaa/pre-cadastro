@@ -34,3 +34,9 @@ body {
   border-radius: 1em;
   padding: 2em 0 2em;
 }
+
+.container header {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+}
