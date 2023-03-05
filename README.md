@@ -12,6 +12,7 @@ Criar uma aplicação que solicite os dados do usuário para realizar um pré-ca
 - [] Adicionar os Assets necessários
 - [] Criar root com as cores
 - [X] Adicionar background gradiente ao body
+- [] Estilizar o container geral
 - [] Estilizar o header
 - [] Estilizar o formulário
 - [] Estilizar os botões
