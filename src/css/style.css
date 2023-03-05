@@ -21,3 +21,8 @@ body {
   overflow: hidden;
   background: linear-gradient(#f2be5c, #FF8C00);;
 }
+
+::selection {
+  color: #fff;
+  background: black;
+}
