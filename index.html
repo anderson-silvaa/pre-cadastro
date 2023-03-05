@@ -18,122 +18,121 @@
     <div class="barra__de__progresso">
       <div class="nome__etapa">
         <p>Nome</p>
-      </div>
-      <div class="numero__etapa">
-        <span>1</span>
+        <div class="numero__etapa">
+          <span>1</span>
+        </div>
       </div>
 
       <div class="nome__etapa">
         <p>Contato</p>
-      </div>
-      <div class="numero__etapa">
-        <span>2</span>
+        <div class="numero__etapa">
+          <span>2</span>
+        </div>
       </div>
 
       <div class="nome__etapa">
         <p>Endereço</p>
-      </div>
-      <div class="numero__etapa">
-        <span>3</span>
+        <div class="numero__etapa">
+          <span>3</span>
+        </div>
       </div>
 
       <div class="nome__etapa">
         <p>Enviar</p>
+        <div class="numero__etapa">
+          <span>4</span>
+        </div>
       </div>
-      <div class="numero__etapa">
-        <span>4</span>
-      </div>
+    </div>
+    <!-- Início do formulário -->
+    <div class="formulario">
+      <form action="#">
+        <div class="pagina pagina__de__slides">
+          <div class="titulo">
+            <h4>Informações básicas</h4>
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="nome">Primeiro nome</label>
+            </div>
+            <input type="text" name="nome">
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="nome">Sobrenome</label>
+            </div>
+            <input type="text" name="sobrenome">
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="nome">CPF</label>
+            </div>
+            <input type="text" name="sobrenome" pattern="\d*">
+          </div>
+          <div class="campo">
+            <button class="primeiro__proximo proximo">Próximo</button>
+          </div>
+        </div>
 
-      <!-- Início do formulário -->
-      <div class="formulario">
-        <form action="#">
-          <div class="pagina pagina__de__slides">
-            <div class="titulo">
-              <h4>Informações básicas</h4>
+        <div class="pagina">
+          <div class="titulo">
+            <h4>Contato</h4>
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="email">Email</label>
             </div>
-            <div class="campo">
-              <div class="label">
-                <label for="nome">Primeiro nome</label>
-              </div>
-              <input type="text" name="nome">
+            <input type="email" name="email">
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="telefone">Celular</label>
             </div>
-            <div class="campo">
-              <div class="label">
-                <label for="nome">Sobrenome</label>
-              </div>
-              <input type="text" name="sobrenome">
-            </div>
-            <div class="campo">
-              <div class="label">
-                <label for="nome">CPF</label>
-              </div>
-              <input type="text" name="sobrenome" pattern="\d*">
-            </div>
-            <div class="campo">
-              <button class="primeiro__proximo proximo">Próximo</button>
+            <input type="tel" name="telefone" pattern="\d*" maxlength="11">
+          </div>
+          <div class="campo">
+            <div class="campo botoes">
+              <button class="voltar__1 voltar">Voltar</button>
+              <button class="proximo__1 proximo">Próximo</button>
             </div>
           </div>
+        </div>
 
-          <div class="pagina">
-            <div class="titulo">
-              <h4>Contato</h4>
+        <div class="pagina">
+          <div class="titulo">
+            <h4>Endereço</h4>
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="cep">CEP</label>
             </div>
-            <div class="campo">
-              <div class="label">
-                <label for="email">Email</label>
-              </div>
-              <input type="email" name="email">
+            <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" maxlength="9">
+            <div class="label">
+              <label for="rua">Rua</label>
             </div>
-            <div class="campo">
-              <div class="label">
-                <label for="telefone">Celular</label>
-              </div>
-              <input type="tel" name="telefone" pattern="\d*" maxlength="11">
+            <input type="text" id="rua" name="rua" placeholder="Nome da rua">
+            <div class="label">
+              <label for="bairro">Bairro</label>
             </div>
+            <input type="text" id="bairro" name="bairro" placeholder="Nome do bairro">
+            <div class="label">
+              <label for="cidade">Cidade</label>
+            </div>
+            <input type="text" id="cidade" name="cidade" placeholder="Nome da cidade">
+            <div class="label">
+              <label for="estado">Estado</label>
+            </div>
+            <input type="text" id="estado" name="estado" placeholder="Estado">
+
             <div class="campo">
-              <div class="campo__botoes">
-                <button class="voltar__1 voltar">Voltar</button>
-                <button class="proximo__1 proximo">Próximo</button>
+              <div class="campo botoes">
+                <button class="voltar__2 voltar">Voltar</button>
+                <button class="submit">Enviar</button>
               </div>
             </div>
           </div>
-
-          <div class="pagina">
-            <div class="titulo">
-              <h4>Endereço</h4>
-            </div>
-            <div class="campo">
-              <div class="label">
-                <label for="cep">CEP</label>
-              </div>
-              <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" maxlength="9">
-              <div class="label">
-                <label for="rua">Rua</label>
-              </div>
-              <input type="text" id="rua" name="rua" placeholder="Nome da rua">
-              <div class="label">
-                <label for="bairro">Bairro</label>
-              </div>
-              <input type="text" id="bairro" name="bairro" placeholder="Nome do bairro">
-              <div class="label">
-                <label for="cidade">Cidade</label>
-              </div>
-              <input type="text" id="cidade" name="cidade" placeholder="Nome da cidade">
-              <div class="label">
-                <label for="estado">Estado</label>
-              </div>
-              <input type="text" id="estado" name="estado" placeholder="Estado">
-
-              <div class="campo">
-                <div class="campo__botoes">
-                  <button class="voltar__2 voltar">Voltar</button>
-                  <button class="submit">Enviar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   </div>
 
