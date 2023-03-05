@@ -18,11 +18,19 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: linear-gradient(#f2be5c, #FF8C00);;
 }
 
 ::selection {
   color: #fff;
   background: black;
+}
+
+.container {
+  width: 330px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 1em;
+  padding: 2em 0 2em;
 }
