@@ -201,7 +201,13 @@ form .pagina .botoes button.proximo {
   display: none;
 }
 
-.barra__de__progresso .nome__etapa p.active {
+.barra__de__progresso .nome__etapa p.ativo{
   color: #FF8C00;
+  transition: 0.2s linear;
+}
+
+.barra__de__progresso .numero__etapa span.ativo{
+  font-weight: 600;
+  color: #201e1e;
   transition: 0.2s linear;
 }
