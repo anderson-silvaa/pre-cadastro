@@ -16,7 +16,7 @@ Criar uma aplicação que solicite os dados do usuário para realizar um pré-ca
 - [X] Estilizar o header
 - [X] Estilizar o formulário
 - [X] Estilizar os botões
-- [] Criar função de slide para o formulário
+- [X] Criar função de slide para o formulário
 - [] Criar função para consumir cep através da api viacep
 - [] Criar efeito de slide para o formulário 
 
