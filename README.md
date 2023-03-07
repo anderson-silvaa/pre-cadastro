@@ -19,6 +19,7 @@ Criar uma aplicação que solicite os dados do usuário para realizar um pré-ca
 - [X] Criar função de slide para o formulário
 - [] Criar função para consumir cep através da api viacep
 - [X] Adicionar api para salvar dados do formulário na planilha do google
+- [] Adicionar função para validação dos campos do formulário
 
 ## Autor
 ### Anderson Silva
