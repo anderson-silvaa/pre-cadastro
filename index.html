@@ -39,7 +39,7 @@
     </div>
     <!-- Início do formulário -->
     <div class="formulario">
-      <form action="#">
+      <form action="#" id="form">
         <div class="pagina pagina__de__slides">
           <div class="titulo">
             <h4>Informações básicas</h4>
@@ -48,19 +48,19 @@
             <div class="label">
               <label for="nome">Primeiro nome</label>
             </div>
-            <input type="text" name="nome">
+            <input type="text" name="nome" id="primeiroNome">
           </div>
           <div class="campo">
             <div class="label">
               <label for="nome">Sobrenome</label>
             </div>
-            <input type="text" name="sobrenome">
+            <input type="text" name="sobrenome" id="sobrenome">
           </div>
           <div class="campo">
             <div class="label">
               <label for="nome">CPF</label>
             </div>
-            <input type="text" name="sobrenome" pattern="\d*">
+            <input type="text" name="sobrenome" pattern="\d*" id="cpf">
           </div>
           <div class="campo">
             <button class="primeiro__proximo proximo">Próximo</button>
@@ -75,13 +75,13 @@
             <div class="label">
               <label for="cidade">Cidade</label>
             </div>
-            <input type="text">
+            <input type="text" id="cidade">
           </div>
           <div class="campo">
             <div class="label">
               <label for="celular">Bairro</label>
             </div>
-            <input type="text">
+            <input type="text" id="bairro">
           </div>
           <div class="campo">
             <div class="campo botoes">
@@ -100,13 +100,13 @@
             <div class="label">
               <label for="email">Email</label>
             </div>
-            <input type="email" name="email">
+            <input type="email" name="email" id="email">
           </div>
           <div class="campo">
             <div class="label">
               <label for="telefone">Celular</label>
             </div>
-            <input type="tel" name="telefone" pattern="\d*" maxlength="11">
+            <input type="tel" name="telefone" pattern="\d*" maxlength="11" id="telefone">
           </div>
           <div class="campo">
             <div class="campo botoes">
@@ -133,6 +133,7 @@
 
 
   <script src="src/javascript/main.js"></script>
+  <script src="src/javascript/api.js"></script>
 </body>
 
 </html>
