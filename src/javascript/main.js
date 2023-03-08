@@ -7,15 +7,20 @@ const textoDeProgresso = document.querySelectorAll('.nome__etapa p');
 const numeroDaEtapa = document.querySelectorAll('.numero__etapa span');
 const botaoEnviar = document.querySelector('.submit');
 const numeroEtapa = document.querySelectorAll('.nome__etapa .numero__etapa');
+let inputCPF = document.querySelector('#cpf');
 let atual = 1;
 
 primeiroBotaoProximo.addEventListener('click', function (event) {
     event.preventDefault();
-    paginaDeSlide.style.marginLeft = '-25%';
-    numeroEtapa[atual - 1].classList.add('ativo');
-    textoDeProgresso[atual - 1].classList.add('ativo');
-    numeroDaEtapa[atual - 1].classList.add('ativo');
-    atual += 1;
+    if(validarCPF(inputCPF.value) == true) { 
+        paginaDeSlide.style.marginLeft = '-25%';
+        numeroEtapa[atual - 1].classList.add('ativo');
+        textoDeProgresso[atual - 1].classList.add('ativo');
+        numeroDaEtapa[atual - 1].classList.add('ativo');
+        atual += 1;
+    } else {
+        alert('CPF INVÁLIDO!')
+    }
 });
 
 segundoBotaoProximo.addEventListener('click', function (event) {
