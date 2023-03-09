@@ -1,6 +1,11 @@
 # pre-cadastro
 Criar uma aplicação que solicite os dados do usuário para realizar um pré-cadastro. E salvar estes dados numa planilha do google.
 
+## Preview 
+<p align="center">
+	<img  src="src/imagens/pc-1.png">
+</p>
+
 
 ## Tarefas 
 
