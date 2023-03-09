@@ -7,19 +7,26 @@ const textoDeProgresso = document.querySelectorAll('.nome__etapa p');
 const numeroDaEtapa = document.querySelectorAll('.numero__etapa span');
 const botaoEnviar = document.querySelector('.submit');
 const numeroEtapa = document.querySelectorAll('.nome__etapa .numero__etapa');
+const formulario = document.querySelector('#form');
+const inputNome = document.querySelector('#primeiroNome');
+const inputSobrenome = document.querySelector('#sobrenome')
 let inputCPF = document.querySelector('#cpf');
 let atual = 1;
 
 primeiroBotaoProximo.addEventListener('click', function (event) {
     event.preventDefault();
-    if(validarCPF(inputCPF.value) == true) { 
+    if(validarCPF(inputCPF.value) == true && validarNome(inputNome.value) == true && validarNome(inputSobrenome.value) == true) { 
         paginaDeSlide.style.marginLeft = '-25%';
         numeroEtapa[atual - 1].classList.add('ativo');
         textoDeProgresso[atual - 1].classList.add('ativo');
         numeroDaEtapa[atual - 1].classList.add('ativo');
         atual += 1;
-    } else {
-        alert('CPF INVÁLIDO!')
+    } if(validarNome(inputNome.value) == false) {
+        alert('O campo nome é inválido')
+    } if(validarNome(inputSobrenome.value) == false) {
+        alert('O campo sobrenome é inválido')
+    } if(validarCPF(inputCPF.value) == false) {
+        alert('Cpf inválido')
     }
 });
 
@@ -85,3 +92,19 @@ function validarCPF (cpf) {
 
     return true;
 }
+
+function validarNome(inputNome, inputSobrenome) {
+    if (!inputNome || inputNome.length < 3 && !inputSobrenome || inputSobrenome < 3) {
+        return false; // retorna false se o nome estiver vazio ou tiver menos de 3 caracteres
+    }
+    return true; // retorna true se o nome tiver 3 ou mais caracteres
+}
+
+// inputNome.addEventListener('blur', function (event) {
+//     event.preventDefault();
+//     if(validarNome(inputNome.value) == true) { 
+//         validarCPF()
+//     } else {
+//         alert('NOME inválido')
+//     }
+// });
