@@ -3,7 +3,7 @@ Criar uma aplicação que solicite os dados do usuário para realizar um pré-ca
 
 ## Preview 
 <p align="center">
-	<img  src="src/imagens/pc-1.png">
+<img  src="src/imagens/pc-1.png">
 </p>
 
 
